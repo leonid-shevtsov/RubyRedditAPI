@@ -14,6 +14,12 @@ module Reddit
       "#{kind}_#{@id}"
     end
 
+    # The username of the author of the entity.
+    # @return [String]
+    def author_name
+      @author
+    end
+
     # The author of the entity. The data is lazy-loaded and cached on the object
     # @return [Reddit::User]
     def author
